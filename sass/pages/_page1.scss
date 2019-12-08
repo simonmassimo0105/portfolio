@@ -1,0 +1,114 @@
+section {
+    width: 100%;
+}
+
+.section-pic {
+    width: 100%;
+    height: 850px;
+    
+}
+
+main {
+    display: flex;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+aside {
+    width: 10%;
+    text-align: center;
+}
+
+ul {
+    position: sticky;
+    top: 0px;
+}
+
+li {
+    padding: 20px 0 20px 0;
+}
+
+a:visited {
+    color: $base-color;
+}
+
+.fa-twitter:hover {
+    color: rgb(5, 236, 236);
+}
+
+.fa-facebook-square:hover {
+    color: rgb(13, 64, 231);
+}
+
+.fa-instagram:hover {
+    color: purple;
+}
+
+.fa-line:hover {
+    color: rgb(19, 194, 19);
+}
+
+.fa-snapchat-ghost:hover {
+    color: rgb(250, 250, 15);
+}
+
+article {
+    width: 90%;
+    // background-color: lightgray;
+    border-left: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-content {
+    width: 90%;
+    height: 400px;
+    background-color: $base-color;
+    border-bottom: solid 1px white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.article-pic {
+    width: 30%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.article-pic img {
+    display: block;
+    transition-duration: 0.3s;
+}
+
+.article-pic img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    opacity: 0.6;
+}
+
+.article-p {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.article-p h1 {
+    font-family: serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    border-bottom: solid 5px red;
+}
+
+.article-p p {
+    color: white;
+    font-family: serif;
+}

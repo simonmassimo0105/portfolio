@@ -1,0 +1,94 @@
+footer {
+    width: 100%;
+    height: 230px;
+    background-color: lightgray;
+}
+
+.footer-top {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ft-left {
+    width: 20%;
+    height: 150px;
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ftl-box {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ftl-box h1 {
+    font-size: 20px;
+    font-family: serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: underline red;
+}
+
+.ftl-box p {
+    font-family: serif;
+    margin: 5px 0 5px 0;
+}
+
+.ftl-box p:hover {
+    cursor: pointer;
+}
+
+.ftl-box a {
+    text-decoration: none;
+}
+
+.ftl-box a:visited {
+    color: black;
+}
+
+.ft-middle {
+    width: 20%;
+    height: 150px;
+    // background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ft-right {
+    width: 20%;
+    height: 150px;
+    // background-color: yellow;
+    
+}
+
+.scroll {
+    width: 5%;
+    height: 150px;
+    // background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-family: serif;
+    border-top: solid 2px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,272 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+footer {
+  width: 100%;
+  height: 230px;
+  background-color: lightgray; }
+
+.footer-top {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-align: center;
+          align-items: center; }
+
+.ft-left {
+  width: 20%;
+  height: 150px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center; }
+
+.ftl-box {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  justify-content: space-around;
+  -webkit-box-align: center;
+          align-items: center; }
+
+.ftl-box h1 {
+  font-size: 20px;
+  font-family: serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  -webkit-text-decoration: underline red;
+          text-decoration: underline red; }
+
+.ftl-box p {
+  font-family: serif;
+  margin: 5px 0 5px 0; }
+
+.ftl-box p:hover {
+  cursor: pointer; }
+
+.ftl-box a {
+  text-decoration: none; }
+
+.ftl-box a:visited {
+  color: black; }
+
+.ft-middle {
+  width: 20%;
+  height: 150px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center; }
+
+.ft-right {
+  width: 20%;
+  height: 150px; }
+
+.scroll {
+  width: 5%;
+  height: 150px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center; }
+
+.footer-bottom {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-family: serif;
+  border-top: solid 2px white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center; }
+
+header {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 10, 0);
+  position: fixed; }
+
+header h1 {
+  color: red;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif; }
+
+header p {
+  color: gray;
+  font-family: serif;
+  font-size: 20px; }
+
+section {
+  width: 100%; }
+
+.section-pic {
+  width: 100%;
+  height: 850px; }
+
+main {
+  display: -webkit-box;
+  display: flex;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+aside {
+  width: 10%;
+  text-align: center; }
+
+ul {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px; }
+
+li {
+  padding: 20px 0 20px 0; }
+
+a:visited {
+  color: #00000a; }
+
+.fa-twitter:hover {
+  color: #05ecec; }
+
+.fa-facebook-square:hover {
+  color: #0d40e7; }
+
+.fa-instagram:hover {
+  color: purple; }
+
+.fa-line:hover {
+  color: #13c213; }
+
+.fa-snapchat-ghost:hover {
+  color: #fafa0f; }
+
+article {
+  width: 90%;
+  border-left: solid 2px black;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center; }
+
+.article-content {
+  width: 90%;
+  height: 400px;
+  background-color: #00000a;
+  border-bottom: solid 1px white;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-align: center;
+          align-items: center; }
+
+.article-pic {
+  width: 30%;
+  height: 250px;
+  overflow: hidden; }
+
+.article-pic img {
+  display: block;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+
+.article-pic img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  opacity: 0.6; }
+
+.article-p {
+  width: 50%;
+  height: 200px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  justify-content: space-around; }
+
+.article-p h1 {
+  font-family: serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  border-bottom: solid 5px red; }
+
+.article-p p {
+  color: white;
+  font-family: serif; }
+
+/*# sourceMappingURL=style.css.map */
