@@ -97,7 +97,7 @@ footer {
   color: black; }
 
 .ft-middle {
-  width: 15%;
+  width: 10%;
   height: 150px;
   display: -webkit-box;
   display: flex;
@@ -110,7 +110,7 @@ footer {
           align-items: center; }
 
 .ft-right {
-  width: 15%;
+  width: 10%;
   height: 160px;
   display: -webkit-box;
   display: flex;
@@ -121,7 +121,7 @@ footer {
           align-items: center; }
 
 .ft-forth {
-  width: 10%;
+  width: 20%;
   height: 150px;
   display: -webkit-box;
   display: flex;
