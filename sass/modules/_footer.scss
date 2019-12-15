@@ -46,10 +46,15 @@ footer {
 
 .ftl-box p:hover {
     cursor: pointer;
+    color: red;
 }
 
 .ftl-box a {
     text-decoration: none;
+}
+
+.ftl-box a:hover {
+    color: red;
 }
 
 .ftl-box a:visited {
@@ -93,6 +98,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+.scroll:hover {
+    color: red;
 }
 
 .footer-bottom {

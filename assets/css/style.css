@@ -139,10 +139,14 @@ footer {
   margin: 5px 0 5px 0; }
 
 .ftl-box p:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  color: red; }
 
 .ftl-box a {
   text-decoration: none; }
+
+.ftl-box a:hover {
+  color: red; }
 
 .ftl-box a:visited {
   color: black; }
@@ -194,6 +198,9 @@ footer {
   -webkit-box-align: end;
           align-items: flex-end; }
 
+.scroll:hover {
+  color: red; }
+
 .footer-bottom {
   width: 100%;
   height: 30px;
@@ -222,6 +229,9 @@ header {
   text-align: center;
   background-color: rgba(0, 0, 10, 0);
   position: fixed; }
+
+header a {
+  text-decoration: none; }
 
 header h1 {
   color: red;
