@@ -34,10 +34,6 @@ $(function() {
         left: 870
     });
 
-    $('.anime').on('click', function() {
-
-    })
-
     $(window).scroll(function (){
         $("#sample").each(function(){
             var imgPos = $(this).offset().top;
@@ -89,4 +85,9 @@ $(function() {
                 }
                 });
         });
+
+        // const res = $('#resani').offset({
+        //     top: 217,
+        //     left: 870
+        // });
 });

@@ -13,9 +13,8 @@ footer {
 }
 
 .ft-left {
-    width: 25%;
+    width: 27%;
     height: 150px;
-    // background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,7 +63,15 @@ footer {
 .ft-middle {
     width: 10%;
     height: 150px;
-    // background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ft-forth {
+    width: 23%;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,28 +80,16 @@ footer {
 
 .ft-right {
     width: 10%;
-    height: 160px;
-    // background-color: yellow;
+    height: 155px;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
     
-}
-
-.ft-forth {
-    width: 20%;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .scroll {
     width: 5%;
     height: 150px;
-    // background-color: greenyellow;
     display: flex;
     justify-content: center;
     align-items: flex-end;
