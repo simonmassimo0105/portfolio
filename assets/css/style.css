@@ -251,6 +251,24 @@ section {
   width: 100%;
   height: 850px; }
 
+.anime {
+  width: 7.5%;
+  height: 253px;
+  -webkit-transition: 5s;
+  transition: 5s;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center; }
+
+.anime:hover {
+  background-color: white; }
+
+.anime p {
+  color: #990303; }
+
 main {
   display: -webkit-box;
   display: flex;
@@ -351,5 +369,13 @@ article {
   color: white;
   font-family: serif;
   line-height: 20px; }
+
+.fade_off {
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
+
+.fade_on {
+  opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
