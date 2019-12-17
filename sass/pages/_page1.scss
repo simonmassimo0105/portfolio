@@ -75,7 +75,6 @@ a:visited {
 
 article {
     width: 90%;
-    // background-color: lightgray;
     border-left: solid 2px black;
     display: flex;
     flex-direction: column;
@@ -144,14 +143,47 @@ article {
     opacity: 1;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 1439px) {
     .anime {
-        // width: 7.5%;
-        // height: 253px;
-        // transition: 3s;
         display: none;
-        // justify-content: center;
-        // align-items: center;
-        // position: fixed;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    aside {
+        display: none;
+    }
+
+    article {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-left: none;
+    }
+
+    .article-content {
+        width: 90%;
+        height: 500px;
+        background-color: $base-color;
+        border-bottom: solid 1px white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .article-pic {
+        width: 70%;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .article-p {
+        width: 90%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 }

@@ -378,8 +378,48 @@ article {
 .fade_on {
   opacity: 1; }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 1439px) {
   .anime {
     display: none; } }
+
+@media screen and (max-width: 800px) {
+  aside {
+    display: none; }
+  article {
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    border-left: none; }
+  .article-content {
+    width: 90%;
+    height: 500px;
+    background-color: #00000a;
+    border-bottom: solid 1px white;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    justify-content: space-around;
+    -webkit-box-align: center;
+            align-items: center; }
+  .article-pic {
+    width: 70%;
+    height: 250px;
+    overflow: hidden; }
+  .article-p {
+    width: 90%;
+    height: 200px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    justify-content: space-around; } }
 
 /*# sourceMappingURL=style.css.map */
