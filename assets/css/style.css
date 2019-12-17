@@ -290,7 +290,11 @@ section {
   background-color: white; }
 
 .anime p {
-  color: #990303; }
+  color: #990303;
+  font-family: serif; }
+
+.anime a {
+  text-decoration: none; }
 
 main {
   display: -webkit-box;
