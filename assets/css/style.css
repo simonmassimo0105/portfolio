@@ -165,13 +165,16 @@ footer {
   cursor: pointer;
   color: red; }
 
+.ftl-box p:visited {
+  color: black; }
+
 .ftl-box a {
   text-decoration: none; }
 
 .ftl-box a:hover {
   color: red; }
 
-.ftl-box p:visited {
+.ftl-box a:visited {
   color: black; }
 
 .ft-middle {
