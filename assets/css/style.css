@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
 v2.0 | 20110126
 License: none (public domain)
@@ -270,6 +271,111 @@ header p {
   font-family: serif;
   font-size: 15px; }
 
+.global-nav {
+  position: fixed;
+  right: -320px;
+  /* これで隠れる */
+  top: 0;
+  width: 300px;
+  /* スマホに収まるくらい */
+  height: 100vh;
+  padding-top: 40px;
+  background-color: #fff;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  z-index: 200;
+  overflow-y: auto;
+  /* メニューが多くなったらスクロールできるように */ }
+
+.hamburger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  /* クリックしやすいようにちゃんと幅を指定する */
+  height: 40px;
+  /* クリックしやすいようにちゃんと高さを指定する */
+  cursor: pointer;
+  z-index: 300;
+  display: none; }
+
+.global-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.global-nav__item {
+  text-align: center;
+  padding: 0 14px; }
+
+.global-nav__item a {
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #111; }
+
+.global-nav__item a:hover {
+  background-color: #eee; }
+
+.hamburger__line {
+  position: absolute;
+  left: 11px;
+  width: 18px;
+  height: 1px;
+  background-color: #111;
+  -webkit-transition: all .6s;
+  transition: all .6s; }
+
+.hamburger__line--1 {
+  top: 14px; }
+
+.hamburger__line--2 {
+  top: 20px; }
+
+.hamburger__line--3 {
+  top: 26px; }
+
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  cursor: pointer; }
+
+/* 表示された時用のCSS */
+.nav-open .global-nav {
+  right: 0; }
+
+.nav-open .black-bg {
+  opacity: .8;
+  visibility: visible; }
+
+.nav-open .hamburger__line--1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 20px; }
+
+.nav-open .hamburger__line--2 {
+  width: 0;
+  left: 50%; }
+
+.nav-open .hamburger__line--3 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 20px; }
+
+@media screen and (max-width: 800px) {
+  .hamburger {
+    display: block; } }
+
 section {
   width: 100%; }
 
@@ -277,8 +383,12 @@ section {
   width: 100%;
   height: 850px; }
 
+.secpic {
+  -o-object-fit: cover;
+     object-fit: cover; }
+
 .anime {
-  width: 7.5%;
+  width: 8.2%;
   height: 253px;
   -webkit-transition: 3s;
   transition: 3s;
@@ -392,13 +502,41 @@ article {
   font-family: serif;
   font-size: 40px;
   font-weight: bold;
-  color: white;
-  border-bottom: solid 5px red; }
+  color: white; }
 
 .article-p p {
   color: white;
   font-family: serif;
-  line-height: 20px; }
+  line-height: 25px; }
+
+#sample2 {
+  margin-top: 15px; }
+
+.bottom {
+  width: 100%; }
+
+.bottom:visited {
+  color: white; }
+
+.underline {
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative; }
+
+.underline::after {
+  background-color: red;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 0;
+  position: absolute;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  width: 100%; }
+
+.underline:hover::after {
+  width: 450%; }
 
 .fade_off {
   opacity: 0;
@@ -450,6 +588,10 @@ article {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+  .underline:hover::after {
+    width: 315%; }
+  #sample2 {
+    margin-top: 0px; } }
 
 /*# sourceMappingURL=style.css.map */
