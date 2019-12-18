@@ -36,7 +36,7 @@ header p {
     width: 300px; /* スマホに収まるくらい */
     height: 100vh;
     padding-top: 40px;
-    background-color: #fff;
+    background-color: rgb(201, 195, 195);
     transition: all .6s;
     z-index: 200;
     overflow-y: auto; /* メニューが多くなったらスクロールできるように */
@@ -68,7 +68,7 @@ header p {
     color: #111;
 }
 .global-nav__item a:hover {
-    background-color: #eee;
+    background-color: rgb(163, 157, 157);
 }
 .hamburger__line {
     position: absolute;

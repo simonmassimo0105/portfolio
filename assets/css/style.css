@@ -280,7 +280,7 @@ header p {
   /* スマホに収まるくらい */
   height: 100vh;
   padding-top: 40px;
-  background-color: #fff;
+  background-color: #c9c3c3;
   -webkit-transition: all .6s;
   transition: all .6s;
   z-index: 200;
@@ -316,7 +316,7 @@ header p {
   color: #111; }
 
 .global-nav__item a:hover {
-  background-color: #eee; }
+  background-color: #a39d9d; }
 
 .hamburger__line {
   position: absolute;
@@ -565,7 +565,7 @@ article {
     border-left: none; }
   .article-content {
     width: 90%;
-    height: 550px;
+    height: 650px;
     background-color: #00000a;
     border-bottom: solid 1px white;
     display: -webkit-box;
@@ -582,7 +582,7 @@ article {
     overflow: hidden; }
   .article-p {
     width: 90%;
-    height: 200px;
+    height: 300px;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
