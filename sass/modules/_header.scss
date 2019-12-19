@@ -10,25 +10,25 @@ header {
     text-align: center;
     background-color: rgba(0, 0, 10, 0);
     position: fixed;
+    a {
+        text-decoration: none;
+    }
+
+    h1 {
+        color: red;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    p {
+        color: gray;
+        font-family: serif;
+        font-size: 15px;
+    }
 }
 
-header a {
-    text-decoration: none;
-}
-
-header h1 {
-    color: red;
-    font-size: 40px;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-header p {
-    color: gray;
-    font-family: serif;
-    font-size: 15px;
-}
-
+// ハンバーガーメニューここから
 .global-nav {
     position: fixed;
     right: -320px; /* これで隠れる */
@@ -120,6 +120,7 @@ header p {
     transform: rotate(-45deg);
     top: 20px;
 }
+// ここまで
 
 @media screen and (max-width: 800px) {
     .hamburger {

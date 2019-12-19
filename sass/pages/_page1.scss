@@ -11,26 +11,99 @@ section {
     object-fit: cover;
 }
 
-.anime {
-    width: 8.2%;
+.hide {
+    object-fit: cover;
+    opacity: 0;
+}
+
+.hide:hover {
+    object-fit: cover;
+    opacity: 1;
+}
+
+// .anime {
+//     width: 8.2%;
+//     height: 253px;
+//     transition: 3s;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     p {
+//         color: rgb(153, 3, 3);
+//         font-family: serif;
+//     }
+
+//     a {
+//         text-decoration: none;
+//     }
+// }
+
+// .anime:hover {
+//     background-color: white;
+// }
+
+.button {
+    width: 8.5%;
     height: 253px;
-    transition: 3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.anime:hover {
-    background-color: white;
-}
-
-.anime p {
-    color: rgb(153, 3, 3);
-    font-family: serif;
-}
-
-.anime a {
+    display: inline-block;
+    text-align: center;
     text-decoration: none;
+    outline: none;
+    position: relative;
+    z-index: 2;
+    // border: 2px solid rgb(153, 3, 3);
+    color: #fff;
+    line-height: 50px;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        color: rgb(153, 3, 3);
+    }
+}
+
+.button::before,
+.button::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: '';
+}
+.button,
+.button::before,
+.button::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 3s;
+    transition: all 3s;
+}
+
+.button:hover {
+    color: #333;
+    background: #fff;
+}
+.button::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 253px;
+    background: rgb(153, 3, 3);
+    opacity: 0.3;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+}
+.button:hover::after {
+    -webkit-transform: rotateY(130deg);
+    transform: rotateY(130deg);
+    opacity: 1;
 }
 
 main {
@@ -122,19 +195,18 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
+    h1 {
+        font-family: serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+    }
 
-.article-p h1 {
-    font-family: serif;
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-}
-
-.article-p p {
-    color: white;
-    font-family: serif;
-    line-height: 25px;
+    p {
+        color: white;
+        font-family: serif;
+        line-height: 25px;
+    }
 }
 
 #sample2 {

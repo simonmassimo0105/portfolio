@@ -387,27 +387,69 @@ section {
   -o-object-fit: cover;
      object-fit: cover; }
 
-.anime {
-  width: 8.2%;
+.hide {
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0; }
+
+.hide:hover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 1; }
+
+.button {
+  width: 8.5%;
   height: 253px;
-  -webkit-transition: 3s;
-  transition: 3s;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center; }
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  line-height: 50px;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
 
-.anime:hover {
-  background-color: white; }
-
-.anime p {
-  color: #990303;
-  font-family: serif; }
-
-.anime a {
+.button a {
   text-decoration: none; }
+
+.button p {
+  color: #990303; }
+
+.button::before, .button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: ''; }
+
+.button, .button::before, .button::after {
+  box-sizing: border-box;
+  -webkit-transition: all 3s;
+  transition: all 3s; }
+
+.button:hover {
+  color: #333;
+  background: #fff; }
+
+.button::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 253px;
+  background: #990303;
+  opacity: 0.3;
+  -webkit-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0); }
+
+.button:hover::after {
+  -webkit-transform: rotateY(130deg);
+  transform: rotateY(130deg);
+  opacity: 1; }
 
 main {
   display: -webkit-box;

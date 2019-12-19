@@ -28,19 +28,19 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-}
 
-.ftl-box h1 {
-    font-size: 20px;
-    font-family: serif;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-decoration: underline red;
-}
+    h1 {
+        font-size: 20px;
+        font-family: serif;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-decoration: underline red;
+    }
 
-.ftl-box p {
-    font-family: serif;
-    margin: 5px 0 5px 0;
+    p {
+        font-family: serif;
+        margin: 5px 0 5px 0;
+    }
 }
 
 .ftl-box p:hover {

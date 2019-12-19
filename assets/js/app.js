@@ -6,32 +6,24 @@ $(function() {
     })
 
     $('.pro').on('click', function() {
-        // 画面の先頭に戻る
-        // animate({実行すること}, 何秒使うか)
         $('html, body').animate({ scrollTop: 900 }, 3000);
     })
 
     $('.car').on('click', function() {
-        // 画面の先頭に戻る
-        // animate({実行すること}, 何秒使うか)
         $('html, body').animate({ scrollTop: 1200 }, 3000);
     })
 
     $('.ski').on('click', function() {
-        // 画面の先頭に戻る
-        // animate({実行すること}, 何秒使うか)
         $('html, body').animate({ scrollTop: 1600 }, 3000);
     })
 
     $('.hob').on('click', function() {
-        // 画面の先頭に戻る
-        // animate({実行すること}, 何秒使うか)
         $('html, body').animate({ scrollTop: 2000 }, 3000);
     })
 
     const anime = $('.anime').offset({
         top: 217,
-        left: 887
+        left: 886
     });
 
     $(window).scroll(function (){
