@@ -87,6 +87,7 @@ section {
 .button:hover {
     color: #333;
     background: #fff;
+    cursor: pointer;
 }
 .button::after {
     top: 0;
