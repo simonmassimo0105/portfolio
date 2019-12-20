@@ -377,218 +377,181 @@ header p {
   .hamburger {
     display: block; } }
 
-section {
-  width: 100%; }
-
-.section-pic {
-  width: 100%;
-  height: 850px; }
-
-.secpic {
-  -o-object-fit: cover;
-     object-fit: cover; }
-
-.hide {
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0; }
-
-.hide:hover {
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 1; }
-
-.button {
-  width: 8.5%;
-  height: 253px;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  line-height: 50px;
-  -webkit-perspective: 300px;
-  perspective: 300px;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d; }
-
-.button a {
-  text-decoration: none; }
-
-.button p {
-  color: #990303; }
-
-.button::before, .button::after {
-  position: absolute;
-  z-index: -1;
-  display: block;
-  content: ''; }
-
-.button, .button::before, .button::after {
-  box-sizing: border-box;
-  -webkit-transition: all 3s;
-  transition: all 3s; }
-
-.button:hover {
-  color: #333;
-  background: #fff;
-  cursor: pointer; }
-
-.button::after {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 253px;
-  background: #990303;
-  opacity: 0.3;
-  -webkit-transform-origin: right bottom;
-  transform-origin: right bottom;
-  -webkit-transform: rotateY(0);
-  transform: rotateY(0); }
-
-.button:hover::after {
-  -webkit-transform: rotateY(130deg);
-  transform: rotateY(130deg);
-  opacity: 1; }
-
-main {
-  display: -webkit-box;
-  display: flex;
-  border-top: solid 2px black;
-  border-bottom: solid 2px black;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px; }
-
-aside {
-  width: 10%;
-  text-align: center; }
-
-ul {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px; }
-
-li {
-  padding: 20px 0 20px 0; }
-
-a:visited {
-  color: #00000a; }
-
-.fa-twitter:hover {
-  color: #05ecec; }
-
-.fa-facebook-square:hover {
-  color: #0d40e7; }
-
-.fa-instagram:hover {
-  color: purple; }
-
-.fa-line:hover {
-  color: #13c213; }
-
-.fa-snapchat-ghost:hover {
-  color: #fafa0f; }
-
-article {
-  width: 90%;
-  border-left: solid 2px black;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-align: center;
-          align-items: center; }
-
-.article-content {
-  width: 90%;
-  height: 400px;
-  background-color: #00000a;
-  border-bottom: solid 1px white;
-  display: -webkit-box;
-  display: flex;
-  justify-content: space-around;
-  -webkit-box-align: center;
-          align-items: center; }
-
-.article-pic {
-  width: 30%;
-  height: 250px;
-  overflow: hidden; }
-
-.article-pic img {
-  display: block;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s; }
-
-.article-pic img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  opacity: 0.6; }
-
-.article-p {
-  width: 50%;
-  height: 200px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  justify-content: space-around; }
-
-.article-p h1 {
-  font-family: serif;
-  font-size: 40px;
-  font-weight: bold;
-  color: white; }
-
-.article-p p {
-  color: white;
-  font-family: serif;
-  line-height: 25px; }
-
-#sample2 {
-  margin-top: 15px; }
-
-.bottom {
-  width: 100%; }
-
-.bottom:visited {
-  color: white; }
-
-.underline {
-  display: inline-block;
-  padding-bottom: 5px;
-  position: relative; }
-
-.underline::after {
-  background-color: red;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 5px;
-  left: 0;
-  position: absolute;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  width: 100%; }
-
-.underline:hover::after {
-  width: 450%; }
-
-.fade_off {
-  opacity: 0;
-  -webkit-transition: all 1s;
-  transition: all 1s; }
-
-.fade_on {
-  opacity: 1; }
+@media screen and (max-width: 2000px) {
+  section {
+    width: 100%; }
+  .section-pic {
+    width: 100%;
+    height: 850px; }
+  .secpic {
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .hide {
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 0; }
+  .hide:hover {
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 1; }
+  .button {
+    width: 8.5%;
+    height: 253px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    line-height: 50px;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+  .button a {
+    text-decoration: none; }
+  .button p {
+    color: #990303; }
+  .button::before, .button::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: ''; }
+  .button, .button::before, .button::after {
+    box-sizing: border-box;
+    -webkit-transition: all 3s;
+    transition: all 3s; }
+  .button:hover {
+    color: #333;
+    background: #fff;
+    cursor: pointer; }
+  .button::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 253px;
+    background: #990303;
+    opacity: 0.3;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+  .button:hover::after {
+    -webkit-transform: rotateY(130deg);
+    transform: rotateY(130deg);
+    opacity: 1; }
+  main {
+    display: -webkit-box;
+    display: flex;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  aside {
+    width: 10%;
+    text-align: center; }
+  ul {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px; }
+  li {
+    padding: 20px 0 20px 0; }
+  a:visited {
+    color: #00000a; }
+  .fa-twitter:hover {
+    color: #05ecec; }
+  .fa-facebook-square:hover {
+    color: #0d40e7; }
+  .fa-instagram:hover {
+    color: purple; }
+  .fa-line:hover {
+    color: #13c213; }
+  .fa-snapchat-ghost:hover {
+    color: #fafa0f; }
+  article {
+    width: 90%;
+    border-left: solid 2px black;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center; }
+  .article-content {
+    width: 90%;
+    height: 400px;
+    background-color: #00000a;
+    border-bottom: solid 1px white;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+            align-items: center; }
+  .article-pic {
+    width: 30%;
+    height: 250px;
+    overflow: hidden; }
+  .article-pic img {
+    display: block;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s; }
+  .article-pic img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    opacity: 0.6; }
+  .article-p {
+    width: 50%;
+    height: 200px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    justify-content: space-around; }
+  .article-p h1 {
+    font-family: serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: white; }
+  .article-p p {
+    color: white;
+    font-family: serif;
+    line-height: 25px; }
+  #sample2 {
+    margin-top: 15px; }
+  .bottom {
+    width: 100%; }
+  .bottom:visited {
+    color: white; }
+  .underline {
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative; }
+  .underline::after {
+    background-color: red;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    width: 100%; }
+  .underline:hover::after {
+    width: 450%; }
+  .fade_off {
+    opacity: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
+  .fade_on {
+    opacity: 1; } }
 
 @media screen and (max-width: 1439px) {
   .anime {
